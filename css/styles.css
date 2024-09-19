@@ -58,7 +58,7 @@
 
  .header-logo {
    padding: 24px 0;
-   padding-right: 76px;
+   margin-right: 76px  
  }
 
   .header-logo .logo-part {
@@ -212,6 +212,7 @@
   .main-list-two {
    display: flex;
     gap: 24px;
+    border-radius: 0px 0px 4px 4px;
   }
 
  .main-medium-header {
@@ -260,7 +261,7 @@
 
 .main-section-fourth {
   padding-top: 120px;
-  
+  padding-bottom: 120px;
 }
 
 .fourth-medium-header {
