@@ -61,8 +61,10 @@
    padding-right: 76px;
  }
 
- .header-logo .logo-part {
+  .header-logo .logo-part {
     color: #2e2f42;
+   margin-right: 76px
+   
  }
 
  .nav-list {
@@ -109,15 +111,14 @@
    color: #434455;
  }
 
- .main-container {
-   width: 1440px;
-   height: 600px;
-   padding-top: 188px;
-   padding-left: 332px;
-   padding-right: 332px;
+ .main-section-first {
+  padding: 188px 0
  }
 
+
+
  .main-header {
+  max-width: 496px;
    margin: 0 auto;
    padding-bottom: 48px;
    width: 496px;
@@ -134,11 +135,14 @@
  }
 
  .main-button {
+   font-weight: 500;
+   border-radius: 4px;
    display: block;
    margin: 0 auto;
-   border-radius: 4px;
+   height: 56px;
+   border: none;
+   min-width: 169px;
    padding: 16px 32px;
-   font-weight: 500;
    font-size: 16px;
    line-height: 1.5;
    letter-spacing: 0.04em;
@@ -152,9 +156,10 @@
    background-color: #404bbf;
  }
 
- .container-list {
-   padding: 120px 13px;
+ .main-section-second {
+  padding: 120px 0
  }
+
 
  .visually-hidden {
    position: absolute;
@@ -196,25 +201,21 @@
  }
 
 
-.container-list-two {
-   width: 1440px;
-   height: 732px;
-}
-
 
   .main-section-third {
-   background-color: #F4F4FD
+    width: 1440px;
+      height: 732px;
+    padding: 120px 0;
+    background-color: #F4F4FD
   }
 
   .main-list-two {
    display: flex;
-   gap: 24px;
-   
+    gap: 24px;
   }
 
  .main-medium-header {
-   padding-top: 120px;
-   padding-bottom: 72px;
+   margin-bottom: 72px;
    font-weight: 700;
    font-size: 36px;
    line-height: 1.11;
@@ -230,20 +231,22 @@
  }
 
   .main-list-two-item {
-   border-radius: 0px 0px 4px 4px;
-   background-color: #fff;
-   width: 232px;
-   height: 56px;
+   flex-basis: calc((100% - 3 * 24px) / 4)
+   border-radius: 0 0 4px 4px;
+   padding: 0px 0px 32px 0px;
+   width: 264px;
+   height: 380px;
   }
 
  .main-image-header {
-   padding: 32px 0 8px;
-   font-weight: 500;
-   font-size: 20px;
-   line-height: 1.2;
-   letter-spacing: 0.02em;
-   text-align: center;
    color: #2e2f42;
+   text-align: center;
+   letter-spacing: 0.02em;
+   line-height: 1.2;
+   font-size: 2opx;
+   font-weight: 500;
+   padding: 32px 0 8px;
+   margin-bottom: 8px  
  }
 
  .main-image-text {
@@ -254,6 +257,15 @@
    text-align: center;
    color: #434455;
  }
+
+.main-section-fourth {
+  padding-top: 120px;
+  
+}
+
+.fourth-medium-header {
+  margin-bottom: 72px;
+}
 
 
  .container-list-three {
@@ -319,13 +331,12 @@
 
  }
 
- .footer-logo-part {
-   display: inline-block;
-   margin-bottom: 16px;
-   font-weight: 700;
-   font-size: 18px;
-   line-height: 1.17;
-   letter-spacing: 0.03em;
+ .footer-logo {
+  display: inline-block;
+  margin-bottom: 16px;
+ }
+
+ .footer-logo  .footer-logo-part {
    text-transform: uppercase;
    color: #f4f4fd;
  }
